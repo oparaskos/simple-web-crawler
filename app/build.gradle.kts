@@ -30,7 +30,7 @@ dependencies {
     testImplementation ("com.github.stefanbirkner:system-lambda:1.2.0")
 
     // This dependency is used by the application.
-    implementation("org.jsoup:jsoup:1.14.3")
+    implementation("org.jsoup:jsoup:1.15.3")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.1")
     implementation("org.jetbrains.kotlinx:kotlinx-cli:0.3.5")
 }

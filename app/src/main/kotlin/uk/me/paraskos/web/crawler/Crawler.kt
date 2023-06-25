@@ -75,7 +75,7 @@ class Crawler(
 
             // If there's a <meta name="robots" content="noindex" /> then respect it and stop crawling this page.
             if (doc.getElementsByTag("meta")
-                    .filter { isMatchingRobotsMetaTag(it) }
+                    .filter { it: Element -> isMatchingRobotsMetaTag(it) }
                     .any { it.attrEquals("content", "noindex", true) }
             ) {
                 return@coroutineScope emptyList()
